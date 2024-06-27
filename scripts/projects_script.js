@@ -12,8 +12,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 desc.classList.remove('active');
             });
 
+            // Remove color from all project items
+            projectItems.forEach(item => {
+                item.style.color = ''; // Reset to default color
+            });
+
             // Show the corresponding description
             document.getElementById(projectId).classList.add('active');
+
+            // Change the color of the clicked project item
+            this.style.color = 'rgba(122, 193, 209, 0.806)';
         });
     });
 });
