@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    <link rel="stylesheet" href="./style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Champions</title>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Community Champions</title>
+        <link rel="shortcut icon" href="./favicon/android-chrome-512x512.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./style.css">
+    </head>
+    </html>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="logo.png" alt="Logo">
-            </a>
-        </div>
-        <nav class="header__nav">
-            <a href="#" target="_blank" class="header__nav-item mail-icon">✉️</a>
-            <a href="https://twitter.com" target="_blank" class="header__nav-item"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank" class="header__nav-item"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" class="header__nav-item"><i class="fa-brands fa-x-twitter"></i></a>
-            <div class="header__nav-item hamburger-menu">
-                ☰
-                <div class="dropdown">
-                    <a href="./projects.html">Projects</a>
-                    <a href="./team.html">Team</a>
-                    <a href="./gallery.html">Gallery</a>
-                </div>
-            </div>
-        </nav>
-        <!-- Logo Home Junior Champions Our Team  -->
+        <h1>Community Champions</h1>
 
+        <nav class="header__nav">
+            
+                <li class="header__nav-item"><a href="./projects.html">Projects</a></li>
+                <li class="header__nav-item"><a href="./team.html">Team</a></li>
+                <li class="header__nav-item"><a href="./gallery.html">Gallery</a></li>
+        </nav>
     </header>
     <main class="about">
-        <section class="about__title">
-            <h1>Community Champions</h1>
+        <section class="about__logo">
+            <img src="./images/CC.jpeg" alt="Community Champions Logo">
         </section>
         <section class="about__blurb">
-            <p>blurb here</p>
+            <p>We are a passionate, dedicated and caring volunteer group 
+                formed in response to the pandemic to bring the community 
+                together.  When the world around us seemed to be falling 
+                apart we wanted to spread love and kindness throughout the 
+                community by offering help and support those in need. 
+                Thanks to a wide and diverse network of community partners 
+                we are able to reach families from all parts of London and 
+                surrounding counties.</p>
+
+
+
+                <p>Since March 2020, Community Champions volunteers have 
+                    been delivering everything from PPE to the NHS and 
+                    keyworkers, to rescuing hundreds of tonnes of surplus 
+                    vegetables to then distribute to food banks, schools, 
+                    soup kitchens, care homes, charities, volunteer 
+                    groups and families. Our main goal to end show the 
+                    community the with the power of love we truly can be 
+                    a part of the change that we want to see in the world.
+                </p>
+                
+                <p>Community Champions was founded by one 
+                    individual's pledge to make a difference to the lives of others 
+                    and has now become an incredible collective of some of the most 
+                    compassionate, caring and amazing people our society has to offer.
+                </p>
+            
         </section>
 
 
@@ -43,7 +64,32 @@
     <footer class="footer">
         <p>Design &copy; James Wills
             <script type="text/javascript">document.write(new Date().getFullYear());</script>
-          </p>
-
+        </p>
+        <div class="footer__nav">
+            <a class="footer__nav-item"><i class="fa-solid fa-envelope" id="mailButton"></i></a>
+            <a class="footer__nav-item" href="https://www.instagram.com/communitychampions2020/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="footer__nav-item" href="https://www.facebook.com/communitychampions2020" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="footer__nav-item" href="https://x.com/communitycham15" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        
     </footer>
+    <script src="./scripts/mail-script.js"></script>
+
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
+</html>
