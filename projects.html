@@ -1,27 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link rel="shortcut icon" href="./favicon/android-chrome-512x512.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./style.css">
+    </head>
 <body>
     <header class="header">
-        <!-- Same header content as index.html -->
+        <h1>Projects</h1>
+
+        <nav class="header__nav">
+            
+                <li class="header__nav-item"><a href="./index.html">Home</a></li>
+                <li class="header__nav-item"><a href="./team.html">Team</a></li>
+                <li class="header__nav-item"><a href="./gallery.html">Gallery</a></li>
+            
+        </nav>
+
     </header>
 
     <main class="projects">
-        <div class="projects__list">
-            <div class="projects__list-item">Project 1</div>
-            <div class="projects__list-item">Project 2</div>
-            <div class="projects__list-item">Project 3</div>
-        </div>
-        <div class="projects__description">
-            Click on a project to see the description.
-        </div>
-    </main>
+        <section class="projects__list">
+            <ul>
+                <li class="projects__list-item" data-project="key-workers"><h2>Key Workers</h2></li>
+                <li class="projects__list-item" data-project="food-hub"><h2>Food Hub</h2></li>
+                <li class="projects__list-item" data-project="surplus-food"><h2>Surplus Food and Pre-Loved</h2></li>
+                <li class="projects__list-item" data-project="ppe"><h2>PPE</h2></li>
+                <li class="projects__list-item" data-project="face-coverings"><h2>Face Coverings</h2></li>
+                <li class="projects__list-item" data-project="junior-champions"><h2>Junior Champions</h2></li>
+
+            </ul>
+        </section>
     
-    <script src="./script.js"></script>
+        <section class="projects__description" id="key-workers">
+            <p>
+                When the wider community was told to stay at home, a few earth angels took 
+                their place in the community to help and protect us. We wanted to show 
+                them that we appreciated all that they were doing for us. When the supermarket 
+                shelves were empty we delivered food parcels to keyworkers to help in a small way. 
+                Thanks to the kindess and generosity of Oregano Institute of Hotel Management 
+                we have been able to provide over 5000 meals to key workers, families 
+                and individuals across London.
+            </p>
+        </section>
+        <section class="projects__description" id="food-hub">
+            <p>
+                Food poverty is prominent in our community and we strongly believe 
+                that as a community we will be able to help make a difference to offer 
+                support to those who need it. We offer a collection and drop off service 
+                for the community to make grocery donations. We have been able to help 
+                support local schools, children centres,  and local groups and charities. 
+                Our Community Cupboard initiative has enabled us to reach smaller communties 
+                by providing them regular access to food and toiletries to help ensure that 
+                their families do not go hungry. We accept referrals from the general public, 
+                local group, schools and charities to ensure the help gets to where it is needed. 
+            </p>
+        </section>
+        <section class="projects__description" id="surplus-food">
+            <p>
+                We live in a wasteful society and we want to help encourage sustainable living.  
+                We work closely with local groups to rescue suprlus food, we also have a pre-loved 
+                donation collection program that is trying to redistribute and redirect items away 
+                from the landfill. We have saved over 100,000 tonnes of food waste and over 500,000 
+                tonnes of clothes, books, toy and furniture donations that would have otherwise gone
+                to the landfill. With our wide network of contacts we are able to ensure that everything
+                is put back into circulation, and if it can't be used we have been up-cycling and getting
+                creative to keep them away from the landfill.
+            </p>
+        </section>
+        <section class="projects__description" id="ppe">
+            <p>
+                Thanks to the generosity of our community we were able to provide local hospitals, 
+                hospices, schools, supermarkets, charities and individuals with all areas of PPE, 
+                including gloves, N95 masks, gowns, face masks, hand sanitiser and more to help our
+                keyworkers feel safe when there was a shortage.</p>
+        </section>
+        <section class="projects__description" id="face-coverings">
+            <p>
+                We have sewn over 5000 masks that have been donated across London, alongside a 
+                national iniative we have been providing high quality face masks to distribute 
+                to hospitals, schools, homeless shelters, womens refuge's, refugee's and the 
+                community. We have also raised over £2000 for The Royal British Legion and £1200 
+                for Get on Downs, Down Syndrome support group. Thanks to a wonderful team of 
+                volunteers we have been able to collect donations of materials to be transformed
+                and redisturbited. As a zero waste group, all scraps have been saved for other projects.
+            </p>
+        </section>
+        <section class="projects__description" id="junior-champions">
+            <p>
+                Junior Community Champions is our platform for the younger generation to 
+                get involved in building a better future for us all.
+            </p>
+            <p>
+                We have arts and craft activities as well as tree planting projects to help 
+                educate and motivate children into becoming an active change in the community.
+
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Design &copy; James Wills
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+        </p>
+        <div class="footer__nav">
+            <a class="footer__nav-item" href="#" target="_blank"><i class="fa-solid fa-envelope" id="mail" aria-hidden="true"></i></a>
+            <a class="footer__nav-item" href="https://www.instagram.com/communitychampions2020/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="footer__nav-item" href="https://www.facebook.com/communitychampions2020" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="footer__nav-item" href="https://x.com/communitycham15" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        
+    </footer>
+    
+    <script src="./scripts/projects_script.js"></script>
 </body>
 </html>
