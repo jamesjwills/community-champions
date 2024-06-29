@@ -115,11 +115,25 @@ PROJECTS PAGE STYLES
 }
 
 .projects__description {
-    flex: 1;
+    flex: 2;
     display: none;
+
 }
 
-.projects__description p {
+.projects__description-image {
+    flex: 1;
+}
+
+.projects__description-image img {
+    
+
+}
+
+.projects__description-text {
+    flex: 1;
+}
+
+.projects__description-text p {
     width: 100%; /* Ensures the p tag takes up the full width of the container */
     margin: 0; /* Removes default margin */
     padding: 1rem 0; /* Removes default padding */
@@ -128,7 +142,7 @@ PROJECTS PAGE STYLES
 }
 
 .projects__description.active {
-    display: block;
+    display: flex;
 }
 
 .projects__list {
@@ -316,4 +330,24 @@ button[type="submit"]:hover {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-height: 700px) {
+    .header, .footer {
+        font-size: 1.5rem; /* Decrease font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about__logo img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header__nav {
+        flex-direction: column;
+    }
 }
